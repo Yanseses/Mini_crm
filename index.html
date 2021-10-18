@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./includes/css/style.css">
+    <title>SKB - CRM</title>
+</head>
+<body id="body">
+    <header class="header">
+        <img src="./includes/img/logo.png" alt="Logo" class="header__logo">
+        <input type="text" class="header__filter" placeholder="Введите запрос">
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">
+            CRM компании skb
+        </h1>
+        <section class="clients">
+            <div class="fix-container">
+                <h2 class="clients__heading">
+                    Клиенты
+                </h2>
+                <table class="table">
+                    <thead class="table__head">
+                        <tr>
+                            <td class="table__head-data" id="id">
+                                ID
+                                <button class="table__sort-btn"></button>
+                            </td>
+                            <td class="table__head-data" id="name">
+                                Фамилия Имя Отчество
+                                <button class="table__sort-btn">A-Я</button>
+                            </td>
+                            <td class="table__head-data" id="createdAt">
+                                Дата и время создания
+                                <button class="table__sort-btn"></button>
+                            </td>
+                            <td class="table__head-data" id="updatedAt">
+                                Последние изменения
+                                <button class="table__sort-btn"></button>
+                            </td>
+                            <td class="table__head-data">
+                                Контакты
+                            </td>
+                            <td class="table__head-data">
+                                Действия
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body"></tbody>
+                </table>
+
+                <div class="clients__btn-wrapper">
+                    <button
+                    type="button"
+                    class="clients__btn"
+                    id="added-btn">
+                    Добавить клиента
+                </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script type="module" src="./includes/js/main.js"></script>
+    </footer>
+</body>
+</html>
